@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><style>
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BASIC */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* HEADER */
+header {
+  background: #020617;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #38bdf8;
+}
+<section id="founder">
+  <h2>Founder & CEO</h2>
+  <div class="founder-card">
+    <img src="IMG_20251214_162723_HDR.jpg" alt="David Muriuki, Founder & CEO">
+    <p>David Muriuki</p>
+    <p>Founder & CEO of SwivelX eVTOL Project</p>
+  </div>
+</section>
+/* SECTIONS */
+section {
+  padding: 30px 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+<section id="about">
+<section id="design">
+<section id="progress">
+<section id="vision">
+<section id="contact">
+
+footer {
+  background: #020617;
+  text-align: center;
+  padding: 15px;
+  color: #94a3b8;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+  <meta charset="UTF-8">
+  <title>eVTOL Project | Future Air Mobility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+  const sections = document.querySelectorAll("section");
+
+  const reveal = () => {
+    sections.forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 100) {
+        section.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", reveal);
+  window.addEventListener("load", reveal);
+</script>
+</head>
+
+<body>
+<nav>
+  <div class="logo">eVTOL Lab</div>
+  <div class="menu">
+    <a href="#about">About</a>
+    <a href="#design">Design</a>
+    <a href="#progress">Progress</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+<header>
+  <h1>Future eVTOL Aircraft</h1>
+  <p>Innovating Urban Air Mobility in Africa</p>
+</header>
+
+<section>
+  <h2>About the Project</h2>
+  <p>
+    This eVTOL (Electric Vertical Take-Off and Landing) aircraft project focuses
+    on clean energy, vertical flight, and affordable air transport.
+    The vision is to build Africa’s homegrown air mobility solution.
+  </p>
+</section>
+
+<section class="dark">
+  <h2>Design & Technology</h2>
+  <ul>
+    <li>Electric propulsion system</li>
+    <li>VTOL multi-rotor design</li>
+    <li>Lightweight composite frame</li>
+    <li>Low noise & zero emissions</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Project Progress</h2>
+  <p>
+    ✔ Concept & sketches completed<br>
+    ✔ Structural layout designed<br>
+    🔧 Prototype development ongoing
+  </p>
+</section>
+
+<section class="dark">
+  <h2>Vision & Roadmap</h2>
+  <p>
+    Our vision is to develop a safe, efficient, and affordable electric
+    vertical take-off and landing aircraft designed for African cities.
+  </p>
+
+  <ul>
+    <li>Phase 1: Concept design & simulations</li>
+    <li>Phase 2: Prototype development</li>
+    <li>Phase 3: Flight testing & optimization</li>
+    <li>Phase 4: Certification & scaling</li>
+  </ul>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p>Email:
+    <a href="mailto:muriukid768@gmail.com">
+      muriukid768@gmail.com
+    </a>
+  </p>
+
+  <p>Phone:
+    <a href="tel:+254732537637">
+      +254 732 537 637
+    </a>
+  </p>
+
+  <p>WhatsApp:
+    <a href="https://wa.me/254732537637" target="_blank">
+      Chat on WhatsApp
+    </a>
+  </p>
+</section>
+
+<footer>
+  © 2026 eVTOL Project | David Muriuki
+</footer>
+
+</body>Evtol-project/
+│── index.html
+│── style.css
+└── images/
+    └── evtol1.jpg
+</html>/* ---------- ANIMATIONS ---------- */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header, section, footer {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+section {
+  animation-delay: 0.2s;
+}
